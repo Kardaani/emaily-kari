@@ -1,5 +1,5 @@
 //keys.js -figure out what set of crentials to return
-ig (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   //we are in production
   module.exports = require('./prod');
 
