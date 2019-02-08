@@ -1,6 +1,6 @@
 //ei suoraa viittausta polkuun esim. ./ - koska npm moduli
 
-import  'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/css/materialize.min.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
