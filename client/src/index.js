@@ -12,10 +12,13 @@ import App from './components/App';
 
 import reducers from './reducers';
 
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
-
-const store = createStore(() => [], {}, applyMiddleware(reduxThunk));
+//const store = createStore(() => [], {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
   <Provider store={store}><App /></Provider>,
    document.querySelector('#root'));
+
+console.log('STRIPE_KEY_IS', process.env.REACT_APP_STRIPE_KEY);
+console.log('Environment is', process.env.NODE_ENV);
