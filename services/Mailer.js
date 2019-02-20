@@ -30,12 +30,12 @@ formatAddresses(recipients) {
 
 addClickTracking() {
 
-  const trackingSettings = new helper.trackingSettings();
+  const trackingSettings = new helper.TrackingSettings();
 
 
 
 
-  const clickTracking = new helper.clickTracking(true, true);
+  const clickTracking = new helper.ClickTracking(true, true);
 
   trackingSettings.setClickTracking(clickTracking);
   this.addTrackingSettings(trackingSettings);
@@ -54,7 +54,7 @@ async send() {
     path: '/v3/mail/send',
     body: this.toJSON()
   });
-  const response = this.sgApi.API(request);
+  const response = await this.sgApi.API(request);
 return response;
 }
 }
