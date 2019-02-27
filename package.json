@@ -18,7 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
-    "ajv": "^6.9.1",
+    "ajv": "^6.9.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
@@ -27,6 +27,7 @@
     "flatted": "^2.0.0",
     "http-proxy-middleware": "^0.19.1",
     "kleur": "3",
+    "localtunnel": "^1.9.1",
     "mailparser": "2.3.0",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.4.8",
